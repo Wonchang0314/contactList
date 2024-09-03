@@ -1,6 +1,7 @@
 # React + Vite
 
-<img width="476" alt="스크린샷 2024-09-03 오후 4 29 29" src="https://github.com/user-attachments/assets/55695d9a-7edd-4986-a6d7-73f1d33a2531">
+![Uploading 스크린샷 2024-09-03 오후 4.57.11.png…]()
+
 
 
 1. 왼쪽, 신규 리스트 추가 영역
