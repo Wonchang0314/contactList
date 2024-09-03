@@ -10,14 +10,7 @@
     7. 저장 버튼 클릭하면  localStrage 에 리스트 저장
     그룹 리스트는 초깃값 저장
         
-        ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2229371f-2da1-497d-8db4-6a28d4376b68/947a9cdc-9dbf-4e51-9027-c67da8d8f122/image.png)
-        
-    
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2229371f-2da1-497d-8db4-6a28d4376b68/67fd8d14-0a42-45fd-89c0-15fb6ee6b38b/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2229371f-2da1-497d-8db4-6a28d4376b68/1ceceee5-f1cd-4044-9353-4c08aab09d51/image.png)
-
+       
 ---
 
 1. 오른쪽, 리스트 및 검색 영역
@@ -27,6 +20,3 @@
     4. 검색 영역에서 이름, 전화번호, 그룹 명 등으로 검색 
     5. 전체 리스트 보기는 모든 리스트 보기 (초깃값)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2229371f-2da1-497d-8db4-6a28d4376b68/9a8192ea-93d0-4e7a-a7dc-c0e2a528a2d6/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2229371f-2da1-497d-8db4-6a28d4376b68/f35422a4-8437-4530-9b5b-4c8cddb8eb3d/image.png)
