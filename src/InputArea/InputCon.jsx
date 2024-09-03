@@ -16,15 +16,28 @@ export default function InputCon({ contactList, setContactList }) {
   const [group, setGroup] = useState(defaultGroup);
   const [selectedGroup, setSelectedGroup] = useState(defaultGroup[0]);
 
+  const checkDuplicate = (newContact) => {
+    return contactList.some(
+      (contact) =>
+        contact.name === newContact.name || contact.phone === newContact.phone
+    );
+  };
+
   const saveContact = () => {
     const newContact = {
       name: name,
       phone: phone,
       group: selectedGroup,
     };
-    const newContactList = [...contactList, newContact];
-    setContactList(newContactList);
-    localStorage.setItem("contactList", JSON.stringify(newContactList));
+    if (checkDuplicate(newContact) === false) {
+      const newContactList = [...contactList, newContact];
+      setContactList(newContactList);
+      localStorage.setItem("contactList", JSON.stringify(newContactList));
+    } else {
+      alert("이미 등록되어 있는 연락처입니다!");
+    }
+    setName("");
+    setPhone("");
   };
   return (
     <div className="inputCon">
