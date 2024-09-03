@@ -1,0 +1,26 @@
+.searchCon {
+  width: 500px;
+  display: flex;
+  gap: 10px;
+}
+.searchCon > input {
+  flex: 1.5;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.searchCon > button {
+  flex: 0.5;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+}
+@media (max-width: 700px) {
+  .searchCon {
+    width: 95%;
+  }
+}
