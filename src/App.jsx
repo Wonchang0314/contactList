@@ -1,7 +1,13 @@
 import "./App.css";
+import styled from "styled-components";
 import { useState } from "react";
 import InputCon from "./InputArea/InputCon";
 import SearchCon from "./ListArea/SearchCon";
+
+const Title = styled.h1`
+  color: tomato;
+  font-weight: bold;
+`;
 
 function App() {
   const defaultContactList = JSON.parse(
@@ -19,7 +25,7 @@ function App() {
   return (
     <>
       <div className="wrap">
-        <h1>연락처 리스트</h1>
+        <Title>연락처 리스트</Title>
         <main>
           <div className="inputArea">
             <InputCon
@@ -27,13 +33,11 @@ function App() {
               setContactList={setContactList}
             />
           </div>
-          <div>
-            <div className="listArea">
-              <SearchCon
-                contactList={contactList}
-                setContactList={setContactList}
-              />
-            </div>
+          <div className="listArea">
+            <SearchCon
+              contactList={contactList}
+              setContactList={setContactList}
+            />
           </div>
         </main>
       </div>

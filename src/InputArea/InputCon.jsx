@@ -40,19 +40,24 @@ export default function InputCon({ contactList, setContactList }) {
     setPhone("");
   };
   return (
-    <div className="inputCon">
-      <InputField field="이름" value={name} setValue={setName} />
-      <InputField field="전화번호" value={phone} setValue={setPhone} />
+    <form className="inputCon">
+      <InputField id="name" field="이름" value={name} setValue={setName} />
+      <InputField
+        id="phone"
+        field="전화번호"
+        value={phone}
+        setValue={setPhone}
+      />
       <SelectField
         group={group}
         setGroup={setGroup}
         selectedGroup={selectedGroup}
         setSelectedGroup={setSelectedGroup}
       />
-      <InputField field="간단한 기록" />
+      <InputField id="record" field="간단한 기록" />
       <button className="saveBtn" onClick={() => saveContact()}>
         저장
       </button>
-    </div>
+    </form>
   );
 }

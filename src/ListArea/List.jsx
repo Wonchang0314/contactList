@@ -23,35 +23,38 @@ export default function List({ contactList, setContactList }) {
   };
 
   return (
-    <ul className="list">
-      {contactList.map((item, i) => (
-        <li key={i} className="list-item">
-          <div className="content">
-            <div className="info">
-              <p>{item.name}</p>
-              <p>{item.phone}</p>
-              <p>{item.group}</p>
+    <>
+      <ul className="list">
+        {contactList.map((item, i) => (
+          <li key={i} className="list-item">
+            <div className="item-inner">
+              <p className="content">
+                <span>{item.name}</span>
+                <span>{item.phone}</span>
+                <span>{item.group}</span>
+              </p>
+
+              <div>
+                <button className="detailBtn" onClick={() => showModal(item)}>
+                  세부사항
+                </button>
+                <button className="deleteBtn" onClick={() => deleteList(item)}>
+                  삭제
+                </button>
+              </div>
             </div>
-            <div className="buttons">
-              <button className="detailBtn" onClick={() => showModal(item)}>
-                세부사항
-              </button>
-              <button className="deleteBtn" onClick={() => deleteList(item)}>
-                삭제
-              </button>
-            </div>
-          </div>
-          <div className="border"></div>
-        </li>
-      ))}
-      {isModalOpen && (
-        <DetailModal
-          setModal={showModal}
-          name={selectedItem.name}
-          phone={selectedItem.phone}
-          group={selectedItem.group}
-        />
-      )}
-    </ul>
+            <div className="border"></div>
+          </li>
+        ))}
+        {isModalOpen && (
+          <DetailModal
+            setModal={showModal}
+            name={selectedItem.name}
+            phone={selectedItem.phone}
+            group={selectedItem.group}
+          />
+        )}
+      </ul>
+    </>
   );
 }

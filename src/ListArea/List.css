@@ -13,31 +13,32 @@
   border-radius: 0.5rem;
 }
 
-.list-item > .content {
+.detailBtn,
+.deleteBtn {
+  flex: 0.25;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.item-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.info {
+.content {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
 }
-
-.buttons {
+.list-item > .buttons {
   display: flex;
-  gap: 1rem;
 }
 
-.detailBtn {
-  padding: 0.5rem 1rem;
-}
-
-.deleteBtn {
-  padding: 0.5rem 1rem;
-}
-
-.border {
+.list-item > .border {
   border-top: 1px solid lightgray;
-  margin-top: 10px;
+  height: 1px;
+  width: 100%;
+  margin-top: 20px;
 }

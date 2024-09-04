@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 
-export default function InputField({ field, value, setValue }) {
+export default function InputField({ id, field, value, setValue }) {
   const [warning, setWarning] = useState("");
 
   const judge = (field, value) => {
@@ -29,8 +29,9 @@ export default function InputField({ field, value, setValue }) {
   return (
     <>
       <div className="inputField">
-        <label htmlFor="">{field}</label>
+        <label htmlFor={id}>{field}</label>
         <input
+          id={id}
           type="text"
           placeholder={field}
           value={value}

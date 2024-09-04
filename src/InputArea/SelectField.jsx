@@ -19,24 +19,23 @@ export default function SelectField({
       <label htmlFor="group" className="selectLabel">
         그룹
       </label>
-      <div>
-        <select
-          name="group"
-          id="group"
-          value={selectedGroup}
-          onChange={(e) => setSelectedGroup(e.target.value)}
-        >
-          {group.map((opt, i) => (
-            <option key={i} value={opt}>
-              {opt}
-            </option>
-          ))}
-        </select>
-        <button onClick={addOption}>조직추가</button>
-        {isModalOpen && (
-          <GroupModal setModal={addOption} group={group} setGroup={setGroup} />
-        )}
-      </div>
+      <select
+        name="group"
+        id="group"
+        value={selectedGroup}
+        onChange={(e) => setSelectedGroup(e.target.value)}
+      >
+        {group.map((opt, i) => (
+          <option key={i} value={opt}>
+            {opt}
+          </option>
+        ))}
+      </select>
+      <button onClick={addOption}>조직추가</button>
+
+      {isModalOpen && (
+        <GroupModal setModal={addOption} group={group} setGroup={setGroup} />
+      )}
     </div>
   );
 }

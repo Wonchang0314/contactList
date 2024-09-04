@@ -1,10 +1,10 @@
 .searchCon {
-  width: 500px;
+  width: 100%;
   display: flex;
   gap: 10px;
 }
 .searchCon > input {
-  flex: 1.5;
+  flex: 2.5;
   border: none;
   background-color: whitesmoke;
   border-radius: 1rem;
@@ -19,7 +19,7 @@
   border: none;
   border-radius: 1rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .searchCon {
     width: 95%;
   }
